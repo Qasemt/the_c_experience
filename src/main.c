@@ -7,17 +7,20 @@
 #include "test_hash_table.h"
 #include "utstring.h"
 #include "test_ut_string.h"
+#include "test_cjson.h"
 
 int main(int argc, char* argv[])
 {
 
 	//run_test_hash_table();
-	run_test_UTString();
-	
+	//run_test_UTString();
+	char* jsonstr;
+	tes_cjson_loadJson(&jsonstr);
+
 
 	getchar();
-	
-	
+
+
 
 	return 0;
 }

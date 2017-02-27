@@ -5,11 +5,11 @@
 void run_test_UTString(void)
 {
 	UT_string *s;
-
+	char f[10];
 	utstring_new(s);
 	utstring_printf(s, "hello world!");
 	printf("char : %s  length :%d \n", utstring_body(s),strlen(utstring_body(s)));
-	char f[10] = { '\0' };
+	 f[9]='\0' ;
 	strcpy(f, "salam");
 	utstring_clear(s);
 	utstring_bincpy(s, f,2);

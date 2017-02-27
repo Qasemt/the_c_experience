@@ -48,6 +48,9 @@
     <ClInclude Include="test_ut_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="test_cjson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -60,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="test_ut_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cjson.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
