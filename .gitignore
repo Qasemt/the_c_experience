@@ -1,3 +1,4 @@
 /out
 /*.sdf
 /*.suo
+/src/x64/Debug
