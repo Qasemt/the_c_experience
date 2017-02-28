@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="cjson">
+      <UniqueIdentifier>{ae4ea450-bb3f-4d8b-baea-3f576bad0abb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -51,6 +54,12 @@
     <ClInclude Include="test_cjson.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="cjson\cJSON.h">
+      <Filter>cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="cjson\cJSON_Utils.h">
+      <Filter>cjson</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -67,6 +76,12 @@
     </ClCompile>
     <ClCompile Include="test_cjson.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cjson\cJSON.c">
+      <Filter>cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="cjson\cJSON_Utils.c">
+      <Filter>cjson</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

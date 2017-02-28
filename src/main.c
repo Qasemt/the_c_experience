@@ -12,10 +12,13 @@
 int main(int argc, char* argv[])
 {
 
-	//run_test_hash_table();
+	run_test_hash_table();
+	//__________________________________________
 	//run_test_UTString();
-	char* jsonstr;
-	tes_cjson_loadJson(&jsonstr);
+	
+	//__________________________________________
+	//char* jsonstr;
+	//tes_cjson_loadJson(&jsonstr);
 
 
 	getchar();

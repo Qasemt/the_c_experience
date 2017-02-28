@@ -1,4 +1,5 @@
 #include "test_hash_table.h"
+#include <stdio.h>
 
 example_user_t *users;
 void init_Hash_Table(void)
@@ -8,7 +9,7 @@ void init_Hash_Table(void)
 	example_user_t *user;
 
 	/* create elements */
-	for (i = 0; i < 100000; i++) {
+	for (i = 0; i < 500000; i++) {
 		user = (example_user_t*)malloc(sizeof(example_user_t));
 
 		if (user == NULL) {
@@ -61,4 +62,5 @@ void run_test_hash_table(){
 	{
 		printf("user find %u", find->id);
 	}
+	delete_all_Hash_Table();
 }
