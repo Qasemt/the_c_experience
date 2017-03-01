@@ -26,6 +26,7 @@ ______
 #### Error: LNK2005: DllMain already defined in dllmain.obj
 ##### solution : add this line to dllmain.cpp in top page 
 ```c++
+link http://stackoverflow.com/questions/343368/error-lnk2005-dllmain12-already-defined-in-msvcrt-lib
 extern "C" { int __afxForceUSRDLL; }
 ```
 ______
