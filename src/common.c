@@ -1,5 +1,6 @@
 #include "common.h"
-
+#include <stdio.h>
+#include <time.h>
 
 
 int * getRandom(void) {

@@ -8,8 +8,8 @@ void tes_cjson_loadJson(char** json)
 {
 	cJSON * root ;
 	cJSON *sessions_arr ;
-	cJSON *arr ;
-	int ff;
+	//cJSON *arr ;
+//	int ff;
 	int length_arr;
 	SessionProfile* lst;
 
@@ -83,7 +83,7 @@ void tes_cjson_ReadFile(char *filename,char**buffer)
 		*buffer = (char*)malloc ((string_size+1)*sizeof(char));
 
 		// Read it all in one operation
-		read_size=	 fread (*buffer, sizeof(char), string_size, handler);
+		read_size=	 (int)fread (*buffer, sizeof(char), string_size, handler);
 
 		// fread doesn't set it so put a \0 in the last position
 		// and buffer is now officially a string
