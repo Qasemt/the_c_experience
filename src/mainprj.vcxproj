@@ -153,6 +153,7 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="test_cjson.h" />
     <ClInclude Include="test_hash_table.h" />
+    <ClInclude Include="test_time.h" />
     <ClInclude Include="test_ut_string.h" />
     <ClInclude Include="utarray.h" />
     <ClInclude Include="uthash.h" />
@@ -168,6 +169,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="test_cjson.c" />
     <ClCompile Include="test_hash_table.c" />
+    <ClCompile Include="test_time.c" />
     <ClCompile Include="test_ut_string.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

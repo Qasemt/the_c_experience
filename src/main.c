@@ -12,7 +12,6 @@
 
 int main(int argc, char* argv[])
 {
-
 	run_test_hash_table();
 	//__________________________________________
 	//run_test_UTString();

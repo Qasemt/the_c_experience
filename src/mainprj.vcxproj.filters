@@ -60,6 +60,9 @@
     <ClInclude Include="cjson\cJSON_Utils.h">
       <Filter>cjson</Filter>
     </ClInclude>
+    <ClInclude Include="test_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -82,6 +85,9 @@
     </ClCompile>
     <ClCompile Include="cjson\cJSON_Utils.c">
       <Filter>cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="test_time.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
