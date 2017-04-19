@@ -53,8 +53,28 @@ void delete_all_Hash_Table() {
 
 void run_test_hash_table(){
 	example_user_t *find;
-
+	int findid=4;
+	struct example_user_t *s, *tmp,*t;
 	init_Hash_Table();
+
+	//________________
+	
+	
+	HASH_FIND_INT(users, &findid, s);  /* id already in the hash? */
+	if (s!=NULL) {
+		for(t=(example_user_t*)s->hh.next; s != NULL; t=(example_user_t*)t->hh.next) {
+			printf("user id %d", t->id);
+		}
+
+	}
+
+
+
+	//________________
+
+
+
+
 
 	//	delete_all_Hash_Table();
 	find = find_user_Hash_Table(500);
