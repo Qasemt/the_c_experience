@@ -30,3 +30,24 @@ link http://stackoverflow.com/questions/343368/error-lnk2005-dllmain12-already-d
 extern "C" { int __afxForceUSRDLL; }
 ```
 ______
+#### Error: Betwen ws2def.h and winsock.h
+The Problem
+```c++
+ws2def.h(91): warning C4005: ‘AF_IPX’ : macro redefinition
+winsock.h(460) : see previous definition of ‘AF_IPX’
+ws2def.h(131): warning C4005: ‘AF_MAX’ : macro redefinition
+winsock.h(479) : see previous definition of ‘AF_MAX’
+```
+The Solution
+```c++
+#define WIN32_LEAN_AND_MEAN
+#include <Windows.h>
+#include <WinSock2.h>
+ 
+int main( int argc, char* argv[] )
+{
+  return 0;
+}
+```
+soure : http://www.zachburlingame.com/2011/05/resolving-redefinition-errors-betwen-ws2def-h-and-winsock-h/
+______
