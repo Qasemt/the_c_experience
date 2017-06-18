@@ -18,7 +18,7 @@ void run_test_ip(void)
 	ip = ipToInt("50.22.100.250"); // value to check
 	//-------- to string -------
 
-	paddr.S_un.S_addr = ip;
+	paddr.S_un.S_addr = (unsigned long)ip;
 
 	ipStr = inet_ntoa(paddr);
 

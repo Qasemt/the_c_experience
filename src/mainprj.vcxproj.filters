@@ -66,6 +66,9 @@
     <ClInclude Include="test_ip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="test_curl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -93,6 +96,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="test_ip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_curl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

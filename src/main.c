@@ -9,13 +9,15 @@
 #include "test_ut_string.h"
 #include "test_cjson.h"
 #include "test_ip.h"
-
+#include  "test_curl.h"
 
 int main(int argc, char* argv[])
 {
 
 	//__________________________________________
-		run_test_ip();
+		run_test_curl();
+	//__________________________________________
+	//	run_test_ip();
 	//__________________________________________
 	//run_test_hash_table();
 	//__________________________________________

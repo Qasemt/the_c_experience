@@ -54,7 +54,7 @@ void delete_all_Hash_Table() {
 void run_test_hash_table(){
 	example_user_t *find;
 	int findid=4;
-	struct example_user_t *s, *tmp,*t;
+	struct example_user_t *s,*t;
 	init_Hash_Table();
 
 	//________________
