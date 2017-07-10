@@ -67,5 +67,5 @@ char variable[20];
 
 functionCopyData(variable);    
 printf(variable);
-``
+```
 
