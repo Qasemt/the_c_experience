@@ -51,3 +51,21 @@ int main( int argc, char* argv[] )
 ```
 soure : http://www.zachburlingame.com/2011/05/resolving-redefinition-errors-betwen-ws2def-h-and-winsock-h/
 ______
+#### Error: call by refrence char array
+```c++
+void functionCopyData(char* buf){
+   // get data from a char variable
+   char* data1 = "textdata1";
+   char* data2 = "textdata2"
+
+   // copy data
+   copy(buf,data1);
+   copy(buf,data2);
+}
+
+char variable[20];
+
+functionCopyData(variable);    
+printf(variable);
+```
+
