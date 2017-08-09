@@ -1,18 +1,22 @@
 #include "test_any.h"
 
+
 void run_test_any()
 {
+	
 		int tmp=0;
-	int t;
-	int R1=0x00004000;//16384
-	int A1 =0x00000001;//
-	int d1 =0x00008000;//32768
-	int f1= 0xFFFFFFFF;
+	int a1 = 0x1 ;
+	int a2 = 0x3 ;
+	int a3 =0x4  ;
+	int a4 =0x8  ;
+	int base = a1|a2;
+
+   if((base & a3)==a3)
+   {
+	  int i=0;
+
+   }
 	
 
-	tmp = tmp|R1;
-	tmp = tmp|A1;
-
-	 t = tmp&R1;
-	 t=tmp&A1;
+	
 }

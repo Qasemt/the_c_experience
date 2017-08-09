@@ -10,18 +10,21 @@
 #include "test_cjson.h"
 #include "test_ip.h"
 #include  "test_curl.h"
+#include "test_any.h"
 
 int main(int argc, char* argv[])
 {
+
+	run_test_any();
 	//__________________________________________
-		run_test_curl();
+	//	run_test_curl();
 	//__________________________________________
 	//	run_test_ip();
 	//__________________________________________
 	//run_test_hash_table();
 	//__________________________________________
 	//run_test_UTString();
-	
+
 	//__________________________________________
 	//char* jsonstr;
 	//tes_cjson_loadJson(&jsonstr);
