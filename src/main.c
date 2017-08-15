@@ -12,12 +12,13 @@
 #include  "test_curl.h"
 #include "test_any.h"
 #include "test_convert_to.h"
-
+#include  "test_time.h"
 int main(int argc, char* argv[])
 {
 
+	run_test_Time();
 	//__________________________________________
-	run_convert_to();
+	//	run_convert_to();
 	//__________________________________________
 	//run_test_any();
 	//__________________________________________
