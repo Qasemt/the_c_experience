@@ -12,14 +12,14 @@
 #include  "test_curl.h"
 #include "test_any.h"
 #include "test_convert_to.h"
-<<<<<<< .mine
+
 #include  "test_time.h"
-=======
+
 #include "test_elapse.h"
->>>>>>> .theirs
+
 int main(int argc, char* argv[])
 {
-	 	run_elapse_();
+	run_elapse_();
 	run_test_Time();
 	//__________________________________________
 	 	//	run_convert_to();

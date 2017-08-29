@@ -1,6 +1,7 @@
 #include "test_elapse.h"
 #include <time.h>
 #include <Windows.h>
+#include "test_time.h"
 
 
 void run_elapse_()
@@ -11,8 +12,8 @@ void run_elapse_()
 	//______________________
 
 	time(&start);
-	Sleep(1000);
-	time(&end);
+	end = addTime3(start, 1, TypeTime_Second);
+	
 	double dif = difftime(end, start);
 	timeinfo = localtime(&start);
 	Sleep(10);

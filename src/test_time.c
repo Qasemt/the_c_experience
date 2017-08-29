@@ -1,35 +1,51 @@
 
 #include "test_time.h"
 #include <stdio.h>
-#include <time.h>
+
 #include <windows.h>
 
-#define _SECOND ((__int64) 10000000)
-#define _MINUTE (60  * _SECOND)
-#define _HOUR   (60  * _MINUTE)
-#define _DAY    (24  * _HOUR)
-#define _MONTH  (31  * _DAY)
-#define _YEAR   (365 * _DAY)
 
-INT64 addTime(INT64 current_time,INT64 value,INT64 typeTime)
+INT64 addTime2(INT64 current_time,INT64 value,INT64 typeTime)
 {
 	if(value<0)
 	{
-		current_time-=(_abs64(value)*typeTime);
+		current_time -= (_abs64(value)*typeTime);
 		current_time-=(current_time%typeTime);
 	}
 	else
 	{
-		current_time+=(_abs64(value)*typeTime);
+		current_time += (_abs64(value)*typeTime);
 		current_time+=(current_time%typeTime);
 	}
 	return current_time;
 
 
 }
-INT64 diffTime(INT64 time1,INT64 time2,INT64 typeTime)
+
+int addTime3(time_t current_time, int value, TypeTime typeTime)
+{
+	struct tm t;
+
+	t= *localtime(&current_time);
+	if (typeTime==TypeTime_Hour)
+	t.tm_hour += value;
+	if (typeTime == TypeTime_Minute) t.tm_min += value;
+	else t.tm_sec += value;
+
+	current_time = mktime(&t);
+
+	return current_time;
+
+
+}
+INT64 diffTime2(INT64 time1,INT64 time2,INT64 typeTime)
 {
 	return  (time1-time2)/typeTime;
+
+}
+int diffTime3(time_t time1, time_t time2, int typeTime)
+{
+	return  (time1 - time2) / typeTime;
 
 }
 
@@ -58,6 +74,6 @@ void run_test_Time(void)
 	//---------------------
 	secs_diff = (end_time-start_time)/_SECOND;
 	//---------------------
-	mint =addTime(end_time,-27,_HOUR);
-	hours_diff=diffTime(start_time,mint,_DAY);
+	mint =addTime2(end_time,-27,_HOUR);
+	hours_diff=diffTime2(start_time,mint,_DAY);
 }
