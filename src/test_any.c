@@ -1,9 +1,21 @@
 #include "test_any.h"
+#include "string.h"
+char *basename(char const *path)
+{
+	char *s = strrchr(path, '\\');
+	if (s == NULL) {
+		return _strdup(path);
+	}
+	else {
+		return _strdup(s + 1);
 
-
+	}
+}
 void run_test_any()
 {
-
+	char a[100] = { 0 };
+	strcpy_s(a,100, "templates\\views\\templates\\index.html");
+	const char *sep = basename(a);
 	int tmp = 0;
 	int a0 = 1 << 0;
 	

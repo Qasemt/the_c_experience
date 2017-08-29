@@ -159,6 +159,7 @@
     <ClInclude Include="test_cjson.h" />
     <ClInclude Include="test_convert_to.h" />
     <ClInclude Include="test_curl.h" />
+    <ClInclude Include="test_elapse.h" />
     <ClInclude Include="test_hash_table.h" />
     <ClInclude Include="test_ip.h" />
     <ClInclude Include="test_time.h" />
@@ -179,6 +180,7 @@
     <ClCompile Include="test_cjson.c" />
     <ClCompile Include="test_convert_to.c" />
     <ClCompile Include="test_curl.c" />
+    <ClCompile Include="test_elapse.cpp" />
     <ClCompile Include="test_hash_table.c" />
     <ClCompile Include="test_ip.c" />
     <ClCompile Include="test_time.c" />
