@@ -106,7 +106,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <CompileAs>CompileAsC</CompileAs>
+      <CompileAs>Default</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -175,12 +175,12 @@
     <ClCompile Include="cjson\cJSON.c" />
     <ClCompile Include="cjson\cJSON_Utils.c" />
     <ClCompile Include="common.c" />
-    <ClCompile Include="main.c" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="test_any.c" />
     <ClCompile Include="test_cjson.c" />
     <ClCompile Include="test_convert_to.c" />
     <ClCompile Include="test_curl.c" />
-    <ClCompile Include="test_elapse.cpp" />
+    <ClCompile Include="test_elapse.c" />
     <ClCompile Include="test_hash_table.c" />
     <ClCompile Include="test_ip.c" />
     <ClCompile Include="test_time.c" />
