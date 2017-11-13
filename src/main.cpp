@@ -25,7 +25,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	InterlockedIncrement64(&f1);
 	f2=f1;*/
 
-	run_elapse_();
+	//run_elapse_();
 
 	//run_test_Time();
 	//__________________________________________
@@ -34,7 +34,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//__________________________________________
 	//run_test_any();
 	//__________________________________________
-	//	run_test_curl();
+		run_test_curl();
 	//__________________________________________
 	//	run_test_ip();
 	//__________________________________________

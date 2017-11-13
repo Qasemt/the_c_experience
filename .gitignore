@@ -3,3 +3,7 @@
 /*.suo
 /src/x64/Debug
 /*.opensdf
+/.vs/the_c_experience/v15/ipch/AutoPCH/24150a7f8e67b47c/MAIN.ipch
+/.vs/the_c_experience/v15/ipch/AutoPCH/f74d683ab241b466/*.ipch
+/.vs/the_c_experience/v15/*.db
+/.vs/the_c_experience/v15
