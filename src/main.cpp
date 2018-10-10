@@ -16,6 +16,9 @@
 //#include <winbase.h>
 #include  "test_time.h"
 #include "test_elapse.h"
+#include "temp_color.h"
+#include <stdio.h>
+#include "test_revers_read_txt.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -27,7 +30,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//run_elapse_();
 
-	run_test_Time();
+	//run_test_Time();
+    run_test_read_text();
 	//__________________________________________
 	//	run_convert_to();
 	 	//	run_convert_to();
@@ -46,7 +50,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	//char* jsonstr;
 	//tes_cjson_loadJson(&jsonstr);
 
+    //std::cout << termcolor::white << termcolor::on_red   <<"Hello 33234234234234234234234234234234!" << std::endl;
+    //std::cout << termcolor::white << termcolor::on_green <<"Hello 33234234234234234234234234234234!" << std::endl;
+    //std::cout << termcolor::white << termcolor::on_blue  <<"Hello 33234234234234234234234234234234!" << std::endl;
+    //std::cout << termcolor::white << termcolor::on_blue  <<"Hello 33234234234234234234234234234234!" <<termcolor::reset<< std::endl;
 
+    //std::cout << "Hello 33234234234234234234234234234234!" << std::endl;
 	getchar();
 
 
