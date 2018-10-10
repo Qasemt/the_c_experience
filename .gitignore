@@ -7,3 +7,4 @@
 /.vs/the_c_experience/v15/ipch/AutoPCH/f74d683ab241b466/*.ipch
 /.vs/the_c_experience/v15/*.db
 /.vs/the_c_experience/v15
+/src/*.filters
