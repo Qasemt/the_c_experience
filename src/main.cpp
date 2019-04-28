@@ -2,6 +2,7 @@
 //
 #include <stdlib.h>
 #include <tchar.h>
+#include "test_process.h"
 #include <conio.h>
 #include "string.h"
 #include "common.h"
@@ -31,7 +32,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//run_elapse_();
 
 	//run_test_Time();
-    run_test_read_text();
+  //  run_test_read_text();
+    run_test_process();
 	//__________________________________________
 	//	run_convert_to();
 	 	//	run_convert_to();
