@@ -162,6 +162,7 @@
     <ClInclude Include="test_ip.h" />
     <ClInclude Include="test_process.h" />
     <ClInclude Include="test_revers_read_txt.h" />
+    <ClInclude Include="test_run_process_with_result.h" />
     <ClInclude Include="test_time.h" />
     <ClInclude Include="test_ut_string.h" />
     <ClInclude Include="utarray.h" />
@@ -185,6 +186,7 @@
     <ClCompile Include="test_ip.c" />
     <ClCompile Include="test_process.c" />
     <ClCompile Include="test_revers_read_txt.cpp" />
+    <ClCompile Include="test_run_process_with_result.cpp" />
     <ClCompile Include="test_time.c" />
     <ClCompile Include="test_ut_string.c" />
   </ItemGroup>
